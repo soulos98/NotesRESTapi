@@ -4,7 +4,12 @@ import java.util.ArrayList;
 
 public class Subject {
     String subjectName;
+
     ArrayList<Note> notes = new ArrayList<>();
+
+    public Subject(){
+        subjectName = null;
+    }
 
     public Subject(String subjectName, ArrayList<Note> notes) {
         this.subjectName = subjectName;
@@ -34,7 +39,7 @@ public class Subject {
     }
 
     public Note getNote(String noteId){
-        return notes.stream().filter(note -> note.noteId.equals(noteId.toLowerCase())).findFirst().orElse(null);
+        return notes.stream().filter(note -> note.getNoteId().equals(noteId.toLowerCase())).findFirst().orElse(null);
     }
 
 

@@ -9,7 +9,7 @@ import java.util.HashMap; // import the HashMap class
 @Service
 public class SubjectService {
 
-    private final HashMap<String, Subject> allNotes = new HashMap<>(); // Will swap with database later on
+    private final HashMap<String, Subject> allNotes = new HashMap<>(); // TODO: SWAP with a real DB
 
     public HashMap<String, Subject> getAllNotes() {
         return allNotes;
@@ -24,12 +24,13 @@ public class SubjectService {
         return allNotes.get(subjectName.toUpperCase());
     }
 
-    public boolean addSubject(Subject subject) {
+    public boolean addSubject(Subject subject, String subjectName) {
         if(subject == null)
             return false;
 
-        allNotes.put(subject.getSubjectName().toUpperCase(), subject);
-        System.out.println(allNotes.get(subject.getSubjectName().toUpperCase()));
+        subject.setSubjectName(subjectName);
+
+        allNotes.put(subjectName.toUpperCase(), subject);
         return true;
     }
 
