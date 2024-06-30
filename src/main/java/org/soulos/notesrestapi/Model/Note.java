@@ -1,7 +1,7 @@
 package org.soulos.notesrestapi.Model;
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import jakarta.validation.constraints.NotEmpty;
-import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 import lombok.Data;
 import lombok.Getter;
@@ -12,7 +12,7 @@ import lombok.Setter;
 @Data
 public class Note {
 
-    @Pattern(regexp = "^(?!.*\\s).+$", message = "No spaces allowed in your noteID.")
+    @JsonDeserialize(using= Deserializer.class)
     @NotEmpty(message= "Error noteId must not be empty or NULL.")
     private String noteId;
 
