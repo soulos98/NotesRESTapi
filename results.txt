@@ -1,0 +1,211 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< org.soulos:NotesRESTapi >-----------------------
+[INFO] Building NotesRESTapi 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ NotesRESTapi ---
+[INFO] Deleting /Users/josegarcia/Desktop/Projects/GitProjects/NotesRESTapi/target
+[INFO] 
+[INFO] >>> spring-boot:3.3.1:run (default-cli) > test-compile @ NotesRESTapi >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ NotesRESTapi ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ NotesRESTapi ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 2 source files with javac [debug parameters release 17] to target/classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ NotesRESTapi ---
+[INFO] skip non existing resourceDirectory /Users/josegarcia/Desktop/Projects/GitProjects/NotesRESTapi/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ NotesRESTapi ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug parameters release 17] to target/test-classes
+[INFO] 
+[INFO] <<< spring-boot:3.3.1:run (default-cli) < test-compile @ NotesRESTapi <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.3.1:run (default-cli) @ NotesRESTapi ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.1)
+
+2024-06-22T15:56:29.893-07:00  INFO 3837 --- [NotesRESTapi] [           main] o.s.n.NotesResTapiApplication            : Starting NotesResTapiApplication using Java 21.0.2 with PID 3837 (/Users/josegarcia/Desktop/Projects/GitProjects/NotesRESTapi/target/classes started by josegarcia in /Users/josegarcia/Desktop/Projects/GitProjects/NotesRESTapi)
+2024-06-22T15:56:29.894-07:00  INFO 3837 --- [NotesRESTapi] [           main] o.s.n.NotesResTapiApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-06-22T15:56:30.156-07:00  INFO 3837 --- [NotesRESTapi] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-22T15:56:30.161-07:00  INFO 3837 --- [NotesRESTapi] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-22T15:56:30.161-07:00  INFO 3837 --- [NotesRESTapi] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-06-22T15:56:30.176-07:00  INFO 3837 --- [NotesRESTapi] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-22T15:56:30.177-07:00  INFO 3837 --- [NotesRESTapi] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 267 ms
+2024-06-22T15:56:30.283-07:00  INFO 3837 --- [NotesRESTapi] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-22T15:56:30.286-07:00  INFO 3837 --- [NotesRESTapi] [           main] o.s.n.NotesResTapiApplication            : Started NotesResTapiApplication in 0.506 seconds (process running for 0.61)
+org.springframework.context.annotation.internalConfigurationAnnotationProcessor
+org.springframework.context.annotation.internalAutowiredAnnotationProcessor
+org.springframework.context.annotation.internalCommonAnnotationProcessor
+org.springframework.context.event.internalEventListenerProcessor
+org.springframework.context.event.internalEventListenerFactory
+notesResTapiApplication
+org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory
+subjectController
+org.springframework.boot.autoconfigure.AutoConfigurationPackages
+org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration
+propertySourcesPlaceholderConfigurer
+org.springframework.boot.autoconfigure.ssl.SslAutoConfiguration
+fileWatcher
+sslPropertiesSslBundleRegistrar
+sslBundleRegistry
+org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor
+org.springframework.boot.context.internalConfigurationPropertiesBinder
+org.springframework.boot.context.properties.BoundConfigurationProperties
+org.springframework.boot.context.properties.EnableConfigurationPropertiesRegistrar.methodValidationExcludeFilter
+spring.ssl-org.springframework.boot.autoconfigure.ssl.SslProperties
+org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration$TomcatWebSocketConfiguration
+websocketServletWebServerCustomizer
+org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration
+org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryConfiguration$EmbeddedTomcat
+tomcatServletWebServerFactory
+org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryAutoConfiguration
+servletWebServerFactoryCustomizer
+tomcatServletWebServerFactoryCustomizer
+server-org.springframework.boot.autoconfigure.web.ServerProperties
+webServerFactoryCustomizerBeanPostProcessor
+errorPageRegistrarBeanPostProcessor
+org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletConfiguration
+dispatcherServlet
+spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties
+org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration
+dispatcherServletRegistration
+org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration
+org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$ThreadPoolTaskExecutorBuilderConfiguration
+threadPoolTaskExecutorBuilder
+org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$TaskExecutorBuilderConfiguration
+taskExecutorBuilder
+org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$SimpleAsyncTaskExecutorBuilderConfiguration
+simpleAsyncTaskExecutorBuilder
+org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$TaskExecutorConfiguration
+applicationTaskExecutor
+org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration
+spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties
+org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration
+error
+beanNameViewResolver
+org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration
+conventionErrorViewResolver
+spring.web-org.springframework.boot.autoconfigure.web.WebProperties
+org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration
+errorAttributes
+basicErrorController
+errorPageCustomizer
+preserveErrorControllerTargetClassPostProcessor
+org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration
+welcomePageHandlerMapping
+welcomePageNotAcceptableHandlerMapping
+localeResolver
+themeResolver
+flashMapManager
+mvcConversionService
+mvcValidator
+mvcContentNegotiationManager
+requestMappingHandlerMapping
+mvcPatternParser
+mvcUrlPathHelper
+mvcPathMatcher
+viewControllerHandlerMapping
+beanNameHandlerMapping
+routerFunctionMapping
+resourceHandlerMapping
+mvcResourceUrlProvider
+defaultServletHandlerMapping
+requestMappingHandlerAdapter
+handlerFunctionAdapter
+mvcUriComponentsContributor
+httpRequestHandlerAdapter
+simpleControllerHandlerAdapter
+handlerExceptionResolver
+mvcViewResolver
+mvcHandlerMappingIntrospector
+viewNameTranslator
+org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter
+defaultViewResolver
+viewResolver
+requestContextFilter
+org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration
+formContentFilter
+org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$ClassProxyingConfiguration
+forceAutoProxyCreatorToUseClassProxying
+org.springframework.boot.autoconfigure.aop.AopAutoConfiguration
+org.springframework.boot.autoconfigure.availability.ApplicationAvailabilityAutoConfiguration
+applicationAvailability
+org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration
+standardJacksonObjectMapperBuilderCustomizer
+spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties
+org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration
+jacksonObjectMapperBuilder
+org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration
+parameterNamesModule
+org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration
+jacksonObjectMapper
+org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonMixinConfiguration
+jsonMixinModuleEntries
+jsonMixinModule
+org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration
+jsonComponentModule
+org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration
+org.springframework.boot.autoconfigure.context.LifecycleAutoConfiguration
+lifecycleProcessor
+spring.lifecycle-org.springframework.boot.autoconfigure.context.LifecycleProperties
+org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration
+stringHttpMessageConverter
+org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration
+mappingJackson2HttpMessageConverter
+org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration
+org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration
+messageConverters
+org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration
+spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties
+org.springframework.boot.autoconfigure.sql.init.SqlInitializationAutoConfiguration
+spring.sql.init-org.springframework.boot.autoconfigure.sql.init.SqlInitializationProperties
+org.springframework.boot.sql.init.dependency.DatabaseInitializationDependencyConfigurer$DependsOnDatabaseInitializationPostProcessor
+org.springframework.boot.autoconfigure.task.TaskSchedulingConfigurations$ThreadPoolTaskSchedulerBuilderConfiguration
+threadPoolTaskSchedulerBuilder
+org.springframework.boot.autoconfigure.task.TaskSchedulingConfigurations$TaskSchedulerBuilderConfiguration
+taskSchedulerBuilder
+org.springframework.boot.autoconfigure.task.TaskSchedulingConfigurations$SimpleAsyncTaskSchedulerBuilderConfiguration
+simpleAsyncTaskSchedulerBuilder
+org.springframework.boot.autoconfigure.task.TaskSchedulingAutoConfiguration
+spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties
+org.springframework.boot.autoconfigure.web.client.RestClientAutoConfiguration
+httpMessageConvertersRestClientCustomizer
+restClientSsl
+restClientBuilderConfigurer
+restClientBuilder
+org.springframework.boot.autoconfigure.web.client.RestTemplateAutoConfiguration
+restTemplateBuilderConfigurer
+restTemplateBuilder
+org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration$TomcatWebServerFactoryCustomizerConfiguration
+tomcatWebServerFactoryCustomizer
+org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration
+org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration
+characterEncodingFilter
+localeCharsetMappingsCustomizer
+org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfiguration
+multipartConfigElement
+multipartResolver
+spring.servlet.multipart-org.springframework.boot.autoconfigure.web.servlet.MultipartProperties
+org.springframework.aop.config.internalAutoProxyCreator
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  18:48 h
+[INFO] Finished at: 2024-06-23T10:44:29-07:00
+[INFO] ------------------------------------------------------------------------
