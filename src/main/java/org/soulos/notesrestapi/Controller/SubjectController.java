@@ -1,7 +1,7 @@
 package org.soulos.notesrestapi.Controller;
 
 
-import com.fasterxml.jackson.databind.ObjectMapper;
+import jakarta.validation.Valid;
 import org.soulos.notesrestapi.Model.Subject;
 import org.soulos.notesrestapi.Services.SubjectService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,12 +15,10 @@ import org.springframework.web.bind.annotation.*;
 public class SubjectController {
 
     SubjectService subjectService;
-    ObjectMapper mapper;
 
     @Autowired
-    public SubjectController (SubjectService subjectService, ObjectMapper mapper){
+    public SubjectController (SubjectService subjectService){
         this.subjectService = subjectService;
-        this.mapper = mapper;
     }
 
 
@@ -34,7 +32,7 @@ public class SubjectController {
 
 
     @PostMapping("/{subjectName}")
-    public ResponseEntity<String> postSubjectNotes(@RequestBody Subject subjectNotes, @PathVariable String subjectName){
+    public ResponseEntity<String> postSubjectNotes(@Valid @RequestBody Subject subjectNotes, @PathVariable String subjectName){
         System.out.println("/subject/{subjectName} (POST endpoint)");
 
         String res = subjectService.addSubject(subjectNotes, subjectName) ? "Successfully added subject note"

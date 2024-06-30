@@ -1,19 +1,17 @@
 package org.soulos.notesrestapi.Services;
 
+import lombok.Getter;
 import org.soulos.notesrestapi.Model.Note;
 import org.soulos.notesrestapi.Model.Subject;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap; // import the HashMap class
 
+@Getter
 @Service
 public class SubjectService {
 
     private final HashMap<String, Subject> allNotes = new HashMap<>(); // TODO: SWAP with a real DB
-
-    public HashMap<String, Subject> getAllNotes() {
-        return allNotes;
-    }
 
     /**
      * Retrieves all notes in a subject section

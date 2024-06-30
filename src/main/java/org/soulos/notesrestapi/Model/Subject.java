@@ -1,10 +1,19 @@
 package org.soulos.notesrestapi.Model;
 
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotEmpty;
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.ArrayList;
 
+@Setter
+@Getter
 public class Subject {
+
     String subjectName;
 
+    @Valid
     ArrayList<Note> notes = new ArrayList<>();
 
     public Subject(){
@@ -16,26 +25,9 @@ public class Subject {
         this.notes = notes;
     }
 
-    public String getSubjectName() {
-        return subjectName;
-    }
 
-    public void setSubjectName(String subjectName) {
-        this.subjectName = subjectName;
-    }
-
-    public ArrayList<Note> getNotes() {
-        return notes;
-    }
-
-    public void setNotes(ArrayList<Note> notes) {
-        this.notes = notes;
-    }
-
-
-    public boolean addNote(String noteId, String noteContent) {
+    public void addNote(String noteId, String noteContent) {
         notes.add(new Note(noteId.toLowerCase(), noteContent));
-        return true;
     }
 
     public Note getNote(String noteId){
