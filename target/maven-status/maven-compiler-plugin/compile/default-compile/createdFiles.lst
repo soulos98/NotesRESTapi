@@ -1,0 +1,7 @@
+org/soulos/notesrestapi/Model/Note.class
+org/soulos/notesrestapi/Controller/SubjectController.class
+org/soulos/notesrestapi/NotesResTapiApplication.class
+org/soulos/notesrestapi/Services/SubjectService.class
+org/soulos/notesrestapi/Configuration/NotesConfig.class
+org/soulos/notesrestapi/Controller/RootController.class
+org/soulos/notesrestapi/Model/Subject.class
