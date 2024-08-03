@@ -2,10 +2,10 @@ package org.soulos.notesrestapi.Model;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import jakarta.validation.constraints.NotEmpty;
-import jakarta.validation.constraints.Pattern;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
+import org.soulos.notesrestapi.Configuration.Deserializer;
 
 @Setter
 @Getter

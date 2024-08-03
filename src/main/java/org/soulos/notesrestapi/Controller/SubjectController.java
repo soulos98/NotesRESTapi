@@ -16,11 +16,6 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/subject")
 public class SubjectController {
 
-//    @InitBinder
-//    public void initBinder(WebDataBinder binder) {
-//        binder.registerCustomEditor(String.class, new StringTrimmerEditor(true));
-//    }
-
     SubjectService subjectService;
 
     @Autowired

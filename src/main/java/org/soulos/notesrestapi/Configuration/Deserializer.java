@@ -1,4 +1,4 @@
-package org.soulos.notesrestapi.Model;
+package org.soulos.notesrestapi.Configuration;
 
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.DeserializationContext;
