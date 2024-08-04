@@ -2,17 +2,20 @@ package org.soulos.notesrestapi.Model;
 
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotEmpty;
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
+
 import java.util.ArrayList;
 
-@Setter
-@Getter
 public class Subject {
 
+    @Getter @Setter
     String subjectName;
 
+    @Getter @Setter
+    @NotEmpty(message="Error notes section must not be empty")
     @Valid
     ArrayList<Note> notes = new ArrayList<>();
 
@@ -24,7 +27,6 @@ public class Subject {
         this.subjectName = subjectName;
         this.notes = notes;
     }
-
 
     public void addNote(String noteId, String noteContent) {
         notes.add(new Note(noteId.toLowerCase(), noteContent));

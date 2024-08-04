@@ -2,6 +2,9 @@ package org.soulos.notesrestapi.Controller;
 
 
 import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotEmpty;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.soulos.notesrestapi.Model.Subject;
 import org.soulos.notesrestapi.Services.SubjectService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +19,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/subject")
 public class SubjectController {
 
+    private static final Logger log = LoggerFactory.getLogger(SubjectController.class);
     SubjectService subjectService;
 
     @Autowired
@@ -26,16 +30,20 @@ public class SubjectController {
 
     @GetMapping("/{subjectName}")
     public ResponseEntity<Subject> getSubjectNotes(@PathVariable String subjectName){
-        System.out.println("/subject/{subjectName} (GET endpoint)");
+        log.info("Client attempting to get subject notes from server");
+        log.info("Endpoint GET: /subject/{}", subjectName);
         Subject foundSubject = subjectService.getSubjectNotes(subjectName);
 
         return ResponseEntity.ok(foundSubject);
     }
 
 
-    @PostMapping("/{subjectName}")
-    public ResponseEntity<String> postSubjectNotes(@Valid @RequestBody Subject subjectNotes, @PathVariable String subjectName){
-        System.out.println("/subject/{subjectName} (POST endpoint)");
+
+    @PostMapping("/")
+    public ResponseEntity<String> postSubjectNotes(@Valid @RequestBody Subject subjectNotes, @RequestParam("subjectName") String subjectName){
+        log.info("Client attempting to post subject notes from server");
+        log.info("Endpoint POST: /subject/?subjectName={}", subjectName);
+        log.info("RequestBody: {}", subjectNotes);
 
         String res = subjectService.addSubject(subjectNotes, subjectName) ? "Successfully added subject note"
                 : "Error occurred adding subject note";
