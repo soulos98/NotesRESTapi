@@ -25,7 +25,6 @@ public class NoteController {
     public ResponseEntity<String> postNote(@RequestParam("subjectName") String subjectName, @RequestBody Note note){
         log.info("Client attempting to post individual note for subject {}, noteConents: {}", subjectName, note);
         log.info("Endpoint POST: /subject/note/?subjectName={}&noteId={}", subjectName, note.getNoteId());
-
         boolean res = noteService.addNote(subjectName, note);
         String result = res ? "All went well note posted as should" : "Error occurred in note posting";
         return ResponseEntity.ok(result);

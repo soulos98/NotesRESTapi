@@ -10,6 +10,4 @@ public class NotesResTapiApplication {
     public static void main(String[] args) {
         SpringApplication.run(NotesResTapiApplication.class, args);
     }
-
-
 }

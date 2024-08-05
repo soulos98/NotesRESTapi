@@ -1,9 +1,12 @@
 C:\Users\Jose\Desktop\GitHub\NotesApi\NotesRESTapi\src\main\java\org\soulos\notesrestapi\Configuration\DeserializeConfig.java
 C:\Users\Jose\Desktop\GitHub\NotesApi\NotesRESTapi\src\main\java\org\soulos\notesrestapi\Configuration\Deserializer.java
 C:\Users\Jose\Desktop\GitHub\NotesApi\NotesRESTapi\src\main\java\org\soulos\notesrestapi\Configuration\NotesConfig.java
+C:\Users\Jose\Desktop\GitHub\NotesApi\NotesRESTapi\src\main\java\org\soulos\notesrestapi\Controller\NoteController.java
 C:\Users\Jose\Desktop\GitHub\NotesApi\NotesRESTapi\src\main\java\org\soulos\notesrestapi\Controller\RootController.java
 C:\Users\Jose\Desktop\GitHub\NotesApi\NotesRESTapi\src\main\java\org\soulos\notesrestapi\Controller\SubjectController.java
+C:\Users\Jose\Desktop\GitHub\NotesApi\NotesRESTapi\src\main\java\org\soulos\notesrestapi\Model\DatabaseSubjectNotes.java
 C:\Users\Jose\Desktop\GitHub\NotesApi\NotesRESTapi\src\main\java\org\soulos\notesrestapi\Model\Note.java
 C:\Users\Jose\Desktop\GitHub\NotesApi\NotesRESTapi\src\main\java\org\soulos\notesrestapi\Model\Subject.java
 C:\Users\Jose\Desktop\GitHub\NotesApi\NotesRESTapi\src\main\java\org\soulos\notesrestapi\NotesResTapiApplication.java
+C:\Users\Jose\Desktop\GitHub\NotesApi\NotesRESTapi\src\main\java\org\soulos\notesrestapi\Services\NoteService.java
 C:\Users\Jose\Desktop\GitHub\NotesApi\NotesRESTapi\src\main\java\org\soulos\notesrestapi\Services\SubjectService.java

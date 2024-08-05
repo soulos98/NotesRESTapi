@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
 
 
 @Controller
-@RequestMapping("/subject")
+@RequestMapping("/subject/")
 public class SubjectController {
 
     private static final Logger log = LoggerFactory.getLogger(SubjectController.class);
@@ -28,8 +28,8 @@ public class SubjectController {
     }
 
 
-    @GetMapping("/{subjectName}")
-    public ResponseEntity<Subject> getSubjectNotes(@PathVariable String subjectName){
+    @GetMapping
+    public ResponseEntity<Subject> getSubjectNotes(@RequestParam("subjectName") String subjectName){
         log.info("Client attempting to get subject notes from server");
         log.info("Endpoint GET: /subject/{}", subjectName);
         Subject foundSubject = subjectService.getSubjectNotes(subjectName);
@@ -39,7 +39,7 @@ public class SubjectController {
 
 
 
-    @PostMapping("/")
+    @PostMapping
     public ResponseEntity<String> postSubjectNotes(@Valid @RequestBody Subject subjectNotes, @RequestParam("subjectName") String subjectName){
         log.info("Client attempting to post subject notes from server");
         log.info("Endpoint POST: /subject/?subjectName={}", subjectName);

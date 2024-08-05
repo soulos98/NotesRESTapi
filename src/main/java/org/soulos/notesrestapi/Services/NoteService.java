@@ -21,8 +21,10 @@ public class NoteService {
     public boolean addNote(String subjectName, Note note){
         subjectName = subjectName.trim();
 
+        // Retrieve subject
         Subject subject =  databaseSubjectNotes.getNotesDatabase().get(subjectName.toUpperCase());
 
+        // Create new subject if not found
         if(subject == null){
             log.info("Subject " + subjectName + " not found");
             subject = new Subject();
@@ -40,6 +42,7 @@ public class NoteService {
         subjectName=subjectName.trim();
         noteId=noteId.trim();
 
+        //TODO: Add exception throwing if note is not found
         Note note = databaseSubjectNotes.getNotesDatabase().get(subjectName.toUpperCase()).getNote(noteId.toUpperCase());
         if(note == null){
             log.info("Note " + noteId + " not found");
